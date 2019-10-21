@@ -3,8 +3,13 @@
 <html>
 <head>
     <title><%= "some title" %></title>
+    <%@ include file="partials/head.html"%>
 </head>
 <body>
+
+    <%@ include file="partials/navbar.html"%>
+
+
     <c:if test="true">
         <h1>Variable names should be very descriptive</h1>
     </c:if>
