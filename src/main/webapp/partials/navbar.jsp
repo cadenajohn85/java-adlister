@@ -4,8 +4,9 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="/ads">Adlister</a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="/login">Login</a></li>
+        <ul class="d-flex nav">
+            <li class="mx-2"><a href="/ads/create">Post a new ad</a></li>
+            <li class="mx-2"><a href="/login">Login</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

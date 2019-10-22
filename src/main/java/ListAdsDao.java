@@ -5,10 +5,11 @@ public class ListAdsDao implements Ads {
     private List<Ad> ads;
 
     public List<Ad> all() {
-        if (ads == null) {
-            ads = generateAds();
-        }
         return ads;
+    }
+
+    public ListAdsDao() {
+        this.ads = generateAds();
     }
 
     private List<Ad> generateAds() {
@@ -38,5 +39,9 @@ public class ListAdsDao implements Ads {
             "Must have strong Java skills"
         ));
         return ads;
+    }
+
+    public void create(Ad ad) {
+        this.ads.add(ad);
     }
 }
