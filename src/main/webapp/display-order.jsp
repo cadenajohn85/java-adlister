@@ -39,13 +39,13 @@
     <p>${param.size}</p>
 
     <h3>Toppings:</h3>
-    <ol class="toppings-list">
+    <ul class="toppings-list">
 <%--        Source for paramValues--%>
 <%--        http://www.java2s.com/Tutorial/Java/0380__JSTL/JSTLFormSelectandCheckBoxGroup.htm--%>
         <c:forEach var="topping" items="${paramValues.toppings}">
             <li class="topping">${topping}</li>
         </c:forEach>
-    </ol>
+    </ul>
 
 
     <h3>Delivery Address:</h3>
