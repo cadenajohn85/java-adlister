@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    if (request.getParameter("username") != null) {
+    if (request.getParameter("username") != null && request.getParameter("password") != null) {
         if (request.getParameter("username").equalsIgnoreCase("admin") &&
             request.getParameter("password").equals("password")) {
             response.sendRedirect("/profile.jsp");
@@ -32,7 +32,7 @@
         <br>
 
         <label for="password">Password: </label>
-        <input type="text" id="password" name="password">
+        <input type="password" id="password" name="password">
         <br>
 
         <button>Submit</button>

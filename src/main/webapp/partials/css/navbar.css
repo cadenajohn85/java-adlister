@@ -2,7 +2,7 @@ nav {
     margin: 0;
 }
 
-ul {
+ul.navbar {
     background: #6AA833;
     color: white;
     font-size: 1.5em;
@@ -11,7 +11,7 @@ ul {
     margin: 1em 0;
 }
 
-li {
+li.navlink {
     margin: .75em;
 
 }
